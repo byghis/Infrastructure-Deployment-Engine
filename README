@@ -1,0 +1,9 @@
+---------------------------------
+Infrastructure Deployment Engine
+---------------------------------
+
+resources/ 
+virtmanager1.log : simple log - clean .gconf
+virtmanager2.log : simple log - clean .gconf and some iterated
+virtmanager3.log : simple log with gconf
+
