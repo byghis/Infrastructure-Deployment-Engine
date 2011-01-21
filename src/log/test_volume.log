@@ -1,0 +1,9 @@
+Creating a New Volume
+Volumen(new volumen): Volume:vol-331D04B9
+
+Getting all Volumes
+Volumes are: [Volume:vol-331D04B9]
+
+Delete all Volumes
+Delete all volumes: [u'vol-331D04B9']
+The volumes deleted(true or false): [True]

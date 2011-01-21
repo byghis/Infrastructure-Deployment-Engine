@@ -1,0 +1,11 @@
+Instances(engine): [[Instance:i-3B6B064D], [Instance:i-3B6B064D], [Instance:i-4D29087A], [Instance:i-4D29087A]]
+Num Instances to verify: [1, 1, 0, 0]
+New Instances(engine): []
+
+Gettint instances ids
+Instances Ids to Reboot: ['i-3B6B064D', 'i-3B6B064D', 'i-4D29087A', 'i-4D29087A']
+Instances Rebooting: [True, True, True, True]
+
+Gettint instances ips
+Instances Ips to Logging: ['192.168.2.38', '192.168.2.38', '192.168.2.36', '192.168.2.36']
+Instances Rebooting: True

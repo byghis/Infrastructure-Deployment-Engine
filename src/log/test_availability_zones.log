@@ -1,0 +1,14 @@
+Getting Zones
+Cluster: clusterpituba 192.168.2.34
+
+Getting Detailed Zones
+Cluster: clusterpituba 192.168.2.34
+Cluster: |- vm types free / max   cpu   ram  disk
+Cluster: |- m1.small 0009 / 0013   1    128     2
+Cluster: |- c1.medium 0004 / 0006   1    256     5
+Cluster: |- m1.large 0002 / 0003   2    512    10
+Cluster: |- m1.xlarge 0001 / 0001   2   1024    20
+Cluster: |- c1.xlarge 0000 / 0000   4   2048    20
+
+Getting List Detailed Zones
+Detailed Zones: {'m1.xlarge': {'disk': 20, 'max': '0001', 'ram': 1024, 'cpu': 2, 'free': '0001'}, 'm1.small': {'disk': 2, 'max': '0013', 'ram': 128, 'cpu': 1, 'free': '0009'}, 'c1.medium': {'disk': 5, 'max': '0006', 'ram': 256, 'cpu': 1, 'free': '0004'}, 'c1.xlarge': {'disk': 20, 'max': '0000', 'ram': 2048, 'cpu': 4, 'free': '0000'}, 'm1.large': {'disk': 10, 'max': '0003', 'ram': 512, 'cpu': 2, 'free': '0002'}}

@@ -1,0 +1,53 @@
+Getting all Reservations
+Reservation ID is: r-3A710784
+Reservation ID is: r-39B2067B
+
+Geting Reservations Ids
+The Reservations Ids are: ['r-3A710784', 'r-39B2067B']
+
+Geting Reservations Ids from Instances Ids
+The Reservations Ids are from instances_ids: []
+
+Get all Instances
+Instance Id is: i-4D29087A
+Instance Id is: i-2F790544
+Instance Id is: i-3B6B064D
+
+Get all Instances ids
+The Instances Ids are: ['i-4D29087A', 'i-2F790544', 'i-3B6B064D']
+
+Get Random Instances 1
+Instance id: i-4D29087A
+Number of instances to verify: 2
+
+Get Random Instances 2
+Instance id: i-3B6B064D and Instance launch_time: 2011-01-20T10:25:10.842Z
+Instance id: i-2F790544 and Instance launch_time: 2011-01-20T10:25:10.833Z
+Number of instances to verify: 1
+Other instances available: 1
+
+Get Instances from List of Ids
+Instance id: i-4D29087A and Instance launch_time: 2011-01-20T11:10:48.429Z
+Instance id: i-2F790544 and Instance launch_time: 2011-01-20T10:25:10.833Z
+Instance id: i-3B6B064D and Instance launch_time: 2011-01-20T10:25:10.842Z
+Number of instances to verify: 0
+
+Get Instances with typevm Politics
+Instances with Typevm Politics: [Instance:i-3B6B064D]
+Number of instances to verify: 1
+
+Get Instances with Adaptive Resource Politics
+Instances with Adaptive Resource Politics: [Instance:i-2F790544]
+Number of instances to verify: 1
+
+Number of running instances: 3
+
+Get Instances Id from instances
+Instance Id is: i-4D29087A
+Instance Id is: i-2F790544
+Instance Id is: i-3B6B064D
+
+Get Instances Id from instances
+Instance Ip is: 192.168.2.36
+Instance Ip is: 192.168.2.37
+Instance Ip is: 192.168.2.38
