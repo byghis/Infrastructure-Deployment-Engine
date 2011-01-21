@@ -2,8 +2,15 @@
 Infrastructure Deployment Engine
 ---------------------------------
 
-resources/ 
-virtmanager1.log : simple log - clean .gconf
-virtmanager2.log : simple log - clean .gconf and some iterated
-virtmanager3.log : simple log with gconf
+The Infrastructure Deployment Engine API
+
+Requisites
+1. A basic Private Cloud configured
+2. Boto
+
+Version 1.0
+
+- Get and Run Instances using simple policies
+and experimental adaptive approach.
+- Reboot, Terminate, Logging using ssh.
 
