@@ -1,0 +1,30 @@
+module ResourceManager {
+
+	struct HashObject{
+		string name;
+		string value;
+	};
+
+	//Forward declaration
+	interface Hashtable;
+		
+	typedef sequence<HashObject> HashObjectSeq;
+	typedef sequence<string> StringSeq;
+	typedef HashObject tuple;
+	typedef Hashtable dictionary;
+	
+	//Exceptions
+	exception NoObjectFoundException{};
+	
+	//hashtable (dictionary in python)
+	interface Hashtable{
+		void put(in string name, in name value);
+		HashObject get(in string key) raises (NoObjectFoundException);
+		string getValue(in string key) raises (NoObjectFoundException);
+		HashObjectSeq getElements();
+		void addElement(in tuple element, in dictionary hash_table);
+		//void addElement(in HashObject element, in Hashtable table);
+	};
+
+
+}; 
