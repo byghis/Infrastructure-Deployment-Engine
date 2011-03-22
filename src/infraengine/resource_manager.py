@@ -9,7 +9,7 @@ has the main functions enabling reuse functions.
 The plain design speficies:
 - A function to get four instances
 - A function to reboot the four instances
-- Support a simple logging for the instances, example ssh
+- Support a simple log in for the instances, example ssh
 """
 
 class ResourceManager:

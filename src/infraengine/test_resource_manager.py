@@ -33,7 +33,7 @@ reboot_instances = infra_deploy.reboot_instances( instances_ids )
 print "Instances Rebooting: %s" % reboot_instances
 
 #
-# Logging Instances
+# Log in Instances
 #
 print "\nGettint instances ips"
 instances_ips = []

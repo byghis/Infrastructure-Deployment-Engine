@@ -211,7 +211,7 @@ class nodeInstance():
         self.reservations = self.__get_reservations(instance_ids)
         return self.__get_multi_instances(self.reservations, instance_ids, policies)
 
-    def get_instances(self, number_instances, policies=None, instance_ids=None):
+    def get_instances(self, number_instances=1, policies=None, instance_ids=None):
         """Get the nummber of instances(number_instances)
 
         Keyword argument:

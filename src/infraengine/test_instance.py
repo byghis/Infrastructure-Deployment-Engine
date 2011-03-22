@@ -157,11 +157,11 @@ print "Instances to poweroff: %s" % instances_ids
 #
 # Show a Console accesing to Virtual Machine
 #
-'''
-instances_ips = ['192.168.2.35']
-instances_ips = engine.get_ips_instances(3)
+
+#instances_ips = ['139.82.2.154']
+instances_ips = engine.get_ips_instances(1)
 engine.show_console(instances_ips)
-'''
+
 
 #
 # Get ids from instances
