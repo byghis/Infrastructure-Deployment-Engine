@@ -1,6 +1,12 @@
 version 0.1
 -----------
 
+Roadmap 11-04-2011
+------------------
+{hashmap, resource_manager}.idl
+{resource_manager_server, resource_manager_client}.py
+{instance, security_group, key_pair, image, zone, volume, snapshot, policy, resouce_client}.lua
+
 Update 04-04-2011
 -----------------
 hashmap.idl
