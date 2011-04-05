@@ -23,10 +23,9 @@ class imageInstance():
         """
         euca_conn = self.__make_connection()
         try:
-            images = euca_conn.get_all_images()        
+            images = euca_conn.get_all_images()
         except Exception, ex:
             euca.display_error_and_exit('%s' % ex)
 
         return images
 
-            

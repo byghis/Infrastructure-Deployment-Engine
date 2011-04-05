@@ -1,125 +1,332 @@
-/* file: resource_manager.idl */
+#ifndef RESOURCE_MANAGER_IDL
+#define RESOURCE_MANAGER_IDL
 
 #include "hashmap.idl"
 
-module ResourceManager {
+module ResourceManager{
 
-	/* NoUsed */
-	exception Failure {
-		string message;
-	};
-	exception ReservationFailed {
-	};
-	/* Used in run_instances */
-	typedef StringSeq list;
-	
-	/* Instance Data */
-	struct InstanceData{			/* Example */
-		string image_id;		/* emi-01FD1576 */
-		string public_dns_name;	 	/* 139.82.2.179 */
-		string private_dns_name; 	/* 139.82.2.179 */
-		string state;			/* running */
-		string key_name;		/* mykey */
-		string ami_launch_index;	/* 0 */
-		string product_codes;		/* *unknow */
-		string instance_type;		/* m1.small */
-		string launch_time;		/* 2011-03-17T19:31:46.003Z */
-		string placement;		/* clusterpituba */
-		string kernel;			/* eki-48261651 */
-		string ramdisk;			/* eri-AB77179D */
-	};
-	
-	/* Instance Info */
-	struct InstanceInfo{
-		string id; 			/* i-52E10937 (TODO: change to instance.id) */
-		InstanceData instance_data;
-	};
+        /* Instance Data */
+        struct InstanceData{                    /* Example */
+                string image_id;                /* emi-01FD1576 */
+                string public_dns_name;         /* 139.82.2.179 */
+                string private_dns_name;        /* 139.82.2.179 */
+                string state;                   /* running */
+                string key_name;                /* mykey */
+                string ami_launch_index;        /* 0 */
+                string product_codes;           /* *unknow */
+                string instance_type;           /* m1.small */
+                string launch_time;             /* 2011-03-17T19:31:46.003Z */
+                string placement;               /* clusterpituba */
+                string kernel;                  /* eki-48261651 */
+                string ramdisk;                 /* eri-AB77179D */
+        };
 
-	/* ImageData */
-	struct ImageData{
-		string location;	/* ubuntu-image-bucket/ubuntu.9-04.x86.img.manifest.xml */
-		string ownerId;		/* admin */
-		string state;		/* available */
-		string is_type;		/* public (or private) TODO: define a retrieve logic */
-		string architecture;	/* x86_64 */
-		string type;		/* machine (verify) */ 
-		string ramdisk_id;	/* eri-AB77179D (verify: ramdisk_id is None) */ 
-		string kernel_id;	/* eki-48261651 (verify: kernel_id is None) */
-	};
+        /* Instance Info */
+        struct InstanceInfo{
+                string instance_id;             /* i-52E10937 */
+                InstanceData instance_data;
+        };
 
-	/* ImageInfo */
-	struct ImageInfo{
-		string image_id;	/* image */
-		ImageData image_data;	
-	};
+	/* Instance List */
+        typedef sequence<InstanceInfo> InstanceInfoSeq;
 
-	/* Volume */
-	/* AvailabilityZone */
-
-	/* Python: List */
-	typedef sequence<InstanceInfo> InstanceInfoSeq;
-	
-	/* Reservation Data */
-	struct ReservationData{		/* Example */
-		string owner_id;	/* admin */
-		string group_id;	/* default */
-	};
-	
-	struct ReservationInfo{				/* Example */
-		string id;				/* r-3BC50723 */
-		ReservationData reservation_data;	
+	struct InstanceSLA{
+		string num_availability;
+		string zone;
+		//Free Resources in AvailabilityZones
 		InstanceInfoSeq instances;
 	};
-
-	typedef sequence<ReservationInfo> ReservationInfoSeq;
-
-	/* Instance */
-	interface Instance{
-
-		/* Reservations Alpha */
-		//void get_reservations();		/* @deprecated */
-		//StringSeq get_reservation_ids();	/* return list reservations ids*/
-		//HashObjectSeq get_reservations();	/* return a HashObject's list */
-		//Hashtable get_reservations_list(); 	/* @review */
-		
-		/* Reservations */
-		StringSeq get_reservation_ids();
-		ReservationInfoSeq get_reservations();
-
-		/* Instances */
-		StringSeq get_instance_ids();
-		unsigned short get_num_instances();
-		InstanceInfoSeq get_all_instances();
-		
-		/* Get Instances */
-		InstanceInfoSeq get_instances(	in unsigned short num_instances,
-						in HashObjectSeq policies,
-				 		in list instance_ids);
-		
-		/* Run Instances */
-		ReservationInfo run_instances(	in unsigned short num_instances,
-						in HashObjectSeq policies);// raise ReservationFailed;
-		
-		/* VM operations */
-		unsigned short reboot_instances(in StringSeq instance_ids);
-		void terminate_instances(in StringSeq instance_ids); //check return type
-		boolean show_console(in StringSeq instance_ids);
-		
-		/* Utility functions */
-		StringSeq get_ips_instances(in unsigned short num_instances);
-		StringSeq get_ids_instances(in unsigned short num_instances);
-		StringSeq get_ids(in InstanceInfoSeq instances_info);
-		StringSeq get_ips(in InstanceInfoSeq instances_info);
-	};
-
-	interface Image{
-
-		ImageInfo get_images(); /* return all images */
-		/* other functions */
-		//ImageData get_images(in string image_id);
 	
+	/* Instance List */
+	typedef sequence<InstanceSLA> InstanceInfoSLASeq;
+
+        /* ImageData */
+        struct ImageData{
+                string location;        /* ubuntu-image-bucket/ubuntu.9-04.x86.img.manifest.xml */
+                string ownerId;         /* admin */
+                string state;           /* available */
+                string type_access;     /* public or private */
+                string architecture;    /* x86_64 */
+                string type;            /* machine (verify) */
+                string ramdisk_id;      /* eri-AB77179D (verify: ramdisk_id is None) */
+                string kernel_id;       /* eki-48261651 (verify: kernel_id is None) */
+        };
+
+        /* ImageInfo */
+        struct ImageInfo{
+                string image_id;        /* image */
+                ImageData image_data;
+        };
+
+	typedef sequence<ImageInfo> ImageInfoSeq;
+
+	/* Region (support Amazon EC2) */
+	struct Region{
+		string region_id;
+		string name;
+		string endpoint;
 	};
 
-	//interface AvailabilityZones{};
-	//interface Volume{};
+        /* AvailabilityZone (cluster) - now name is id */
+	struct ZoneData{
+		string name;
+		string state; //ip?
+		//string region_id; //AWS  (associated in eucalyptus?)
+	};
+	
+	/* 
+	struct ZoneInfo{
+		string zone_id;
+		ZoneData zone_data;
+	};
+	*/
+
+	typedef sequence<ZoneData> AvailabilityZoneDataSeq; //check the name
+	
+        /* Volume */
+	struct VolumeData{
+		string volume_size;
+		string snapshot_id;
+		string status;
+		string create_time;
+		
+		struct AttachData{
+			string instante_id;
+			string device;
+			string time;
+		} attached_to;
+	};
+
+	struct VolumeInfo{
+		string volume_id;
+		VolumeData volume_data;
+	};
+
+	typedef sequence<VolumeInfo> VolumeInfoSeq;
+
+        /* Reservation Data */
+        struct ReservationData{         /* Example */
+                string owner_id;        /* admin */
+                string group_id;        /* default */
+        };
+
+        struct ReservationInfo{                         /* Example */
+                string reservation_id;                  /* r-3BC50723 */
+                ReservationData reservation_data;
+                InstanceInfoSeq instances;
+        };
+
+	/* Reservation List */
+        typedef sequence<ReservationInfo> ReservationInfoSeq;
+
+	/* Permissions */
+	struct GrantData{
+		string owner;
+		string name;
+		string cidr_ip;
+	};
+	
+	/* Access Rules */
+	struct RuleData{
+		string ip_protocol;
+		string from_port;
+		string to_port;
+		GrantData grant_data;
+	};
+
+	/* Groups */
+	struct GroupData{
+		string owner_id;
+		string name;
+		string description;
+		RuleData rule_data;
+	};
+
+	/* Security */
+	struct KeyPair{
+		string name;
+		string fingerprint;
+		//string material; (check)
+	};
+
+	/* Addresses Allocation */
+	struct Address{
+		string public_ip;
+		string instance_id;
+	};
+
+        /* Instance */
+        interface Instance{
+
+                /* Reservations @deprecated */
+                string get_reservations_d();
+
+                /* Reservations */
+                StringSeq get_reservation_ids();
+                ReservationInfoSeq get_reservations();
+
+                /* Instances */
+                StringSeq get_instance_ids();
+                unsigned short get_num_instances();
+                InstanceInfoSeq get_all_instances();
+
+                /* Get Instances */
+                InstanceInfoSeq get_instances(  in unsigned short num_instances,
+                                                in HashObjectSeq policies,
+                                                in StringSeq instance_ids);
+		/* Get Instances - SLA */
+		InstanceSLA get_instances_sla(	in unsigned short num_instances,
+						in HashObjectSeq policies,
+						in StringSeq instance_ids);
+                /* Run Instances */
+                ReservationInfo run_instances(  in unsigned short num_instances,
+                                                in HashObjectSeq policies);// raise ReservationFailed;
+
+                /* VM operations */
+                unsigned short reboot_instances(in StringSeq instance_ids);
+                void terminate_instances(in StringSeq instance_ids); //check return type
+                boolean show_console(in StringSeq instance_ids);
+
+		/* Utility functions */
+		//ImageData get_image_data(in string image_id);
+
+                /* Utility functions : deprecated in ResourceEngine 1.1*/
+                StringSeq get_ips_instances(in unsigned short num_instances);
+                StringSeq get_ids_instances(in unsigned short num_instances);
+                StringSeq get_ids(in InstanceInfoSeq instances_info);
+                StringSeq get_ips(in InstanceInfoSeq instances_info);
+        };
+/*
+        struct ImageData{
+                string location		= ubuntu-image-bucket/ubuntu.9-04.x86.img.manifest.xml
+                string ownerId		= admin
+                string state		= available
+                string type_access	= public or private
+                string architecture	= x86_64
+                string type		= machine (verify)
+                string ramdisk_id	= eri-AB77179D (verify: ramdisk_id is None)
+                string kernel_id	= eki-48261651 (verify: kernel_id is None)
+        };
+
+        struct ImageInfo{
+                string image_id;        = image 
+                ImageData image_data;
+        };
+
+	typedef sequence<ImageInfo> ImageInfoSeq;
+*/
+
+	interface Image {
+
+		/* Getting All ImageInfo */ 
+		ImageInfoSeq get_images();
+		ImageInfoSeq get_images2(in string image_id);
+		ImageInfoSeq get_images3(in StringSeq image_ids);
+
+		/* Getting ImageInfo (image, kernel, ramdisk)  or probably utility functions */
+		ImageInfo get_emi_info(in string image_id);
+		ImageInfo get_ramdisk_info(in string ramdisk_id);
+		ImageInfo get_kernel_info(in string kernel_id);
+
+		/* Functions related to ownerId */	
+	};
+
+	/* Region (support Amazon EC2)
+	struct Region{
+		string region_id;
+		string name;
+		string endpoint;
+	};
+
+	struct AvailabilityZoneData{
+		string name;
+		string state;
+		string region_id;
+	};
+	typedef sequence<AvailabilityZoneData> AvailabilityZoneDataSeq; //check the name
+	*/
+
+	/* AvailabilityZone */
+	interface AvailabilityZone {
+
+		AvailabilityZoneDataSeq get_zones(); //default all zones
+		/* Utility function */
+		HashObjectComposedSeq get_typevm_zones();//default all typevms
+		//HashObjectSeq get_typevm_zones(in string zone_id);//default all typevms or specified by zone_id
+	};
+	
+
+	/* Volume 
+	struct VolumeData{
+                string volume_size;
+                string snapshot_id;
+                string status;
+                string create_time;
+
+                struct AttachData{
+                        string instante_id;
+                        string device;
+                        string time;
+                } attached_to;
+        };
+
+        struct VolumeInfo{
+                string volume_id;
+                VolumeData volume_data;
+        };
+
+        typedef sequence<VolumeInfo> VolumeInfoSeq;
+	*/
+
+	/* Volume */
+	interface Volume{
+		void create();
+		void attach();
+		void detach();
+		void delete();
+		void describe();
+	};
+
+	/* Permissions
+        struct GrantData{
+                string owner;
+                string name;
+                string cidr_ip;
+        };
+	*/
+
+        /* Access Rules
+        struct RuleData{
+                string ip_protocol;
+                string from_port;
+                string to_port;
+                GrantData grant_data;
+        };
+	*/
+
+        /* Groups
+        struct GroupData{
+                string owner_id;
+                string name;
+                string description;
+                RuleData rule_data;
+        };
+	*/
+
+        /* Security
+        struct KeyPair{
+                string name;
+                string fingerprint;
+                string material;
+        };
+	*/
+
+        /* Addresses Allocation
+        struct Address{
+                string public_ip;
+                string instance_id;
+        };
+	*/
+
 };
+#endif

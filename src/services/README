@@ -1,0 +1,21 @@
+version 0.1
+-----------
+
+Update 04-04-2011
+-----------------
+hashmap.idl
+resource_manager.idl
+resource_manager_server_nssrv.py
+resource_manager_client_nsctl.py
+resourceinstance.lua
+resource_client.lua
+output.log
+
+Update 22-03-2011
+------------
+hashmap.idl
+logging.conf
+resource_manager_client.py
+resource_manager.idl
+resource_manager_server.py
+
