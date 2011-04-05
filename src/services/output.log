@@ -1,0 +1,1471 @@
+[Mon Apr  4 19:04:37 2011 ] [DEPLOYINFO  ] In function oil.main: 
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] In Instance:__init(self, instance_data)
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] Printing self:
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] Printing instance_data: 
+----[Printing Self Values]
+output        :	file (0xb7ea24e0)
+prefix        :	
+maxdepth      :	-1
+table history :	table: 0x81f8ea0
+value         :	nil
+startin for   :
+
+----[Viewer:print:for:self:writevalue(output,value,history,prefix,maxdepth)]
+{ --[[table: 0x8267140]]
+  instance_data = { --[[table: 0x81ffe70]]
+    instance_type = "m1.small",
+    key_name = "mykey",
+    placement = "clusterpituba",
+    private_dns_name = "139.82.2.179",
+    product_codes = "unknow",
+    image_id = "emi-01FD1576",
+    ramdisk = "eri-AB77179D",
+    public_dns_name = "139.82.2.179",
+    kernel = "eki-48261651",
+    launch_time = "2011-03-17T19:31:46.003Z",
+    ami_launch_index = "0",
+    state = "running",
+  },
+  instance_id = "i-54251318",
+}
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] Printing inst ( __init(self, instance_data ): 
+----[Printing Self Values]
+output        :	file (0xb7ea24e0)
+prefix        :	
+maxdepth      :	-1
+table history :	table: 0x82e5458
+value         :	nil
+startin for   :
+
+----[Viewer:print:for:self:writevalue(output,value,history,prefix,maxdepth)]
+{ --[[table: 0x8267140]]
+  image = { --[[table: 0x82a43b8]]
+    __reference = { --[[table: 0x81b6240]]
+      type_id = "IDL:ResourceManager/Image:1.0",
+      profiles = { --[[table: 0x81b6330]]
+        1 { --[[table: 0x81b6378]]
+          profile_data = "\000\r\000\000\000139.82.2.178\000\000Û\000\000\000þb/šM\000\000.È\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000TTA\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000	\000\000\000\000	\000",
+          tag = 0,
+        },
+        n = 1,
+      },
+    },
+    __deferred = { --[[table: 0x82a4618]]
+      __reference = table: 0x81b6240,
+    },
+    __try = { --[[table: 0x82a4910]]
+      __reference = table: 0x81b6240,
+    },
+  },
+  zone = { --[[table: 0x81db900]]
+    __reference = { --[[table: 0x82e4fe0]]
+      type_id = "IDL:ResourceManager/AvailabilityZone:1.0",
+      profiles = { --[[table: 0x82e5098]]
+        1 { --[[table: 0x82e50e0]]
+          profile_data = "\000\r\000\000\000139.82.2.178\000\000Û\000\000\000þb/šM\000\000.È\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000TTA\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000	\000\000\000\000	\000",
+          tag = 0,
+        },
+        n = 1,
+      },
+    },
+    __deferred = { --[[table: 0x81dbb28]]
+      __reference = table: 0x82e4fe0,
+    },
+    __try = { --[[table: 0x81dbde8]]
+      __reference = table: 0x82e4fe0,
+    },
+  },
+  broker = true,
+  engine = { --[[table: 0x8131aa0]]
+    __reference = { --[[table: 0x810efd8]]
+      type_id = "IDL:ResourceManager/Instance:1.0",
+      profiles = { --[[table: 0x810f0c8]]
+        1 { --[[table: 0x810f110]]
+          profile_data = "\000\r\000\000\000139.82.2.178\000\000Û\000\000\000þb/šM\000\000.È\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000TTA\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000	\000\000\000\000	\000",
+          tag = 0,
+        },
+        n = 1,
+      },
+    },
+    __deferred = { --[[table: 0x8131d28]]
+      __reference = table: 0x810efd8,
+    },
+    __try = { --[[table: 0x8131f50]]
+      __reference = table: 0x810efd8,
+    },
+  },
+  instance_data = { --[[table: 0x81ffe70]]
+    instance_type = "m1.small",
+    key_name = "mykey",
+    placement = "clusterpituba",
+    private_dns_name = "139.82.2.179",
+    product_codes = "unknow",
+    image_id = "emi-01FD1576",
+    ramdisk = "eri-AB77179D",
+    public_dns_name = "139.82.2.179",
+    kernel = "eki-48261651",
+    launch_time = "2011-03-17T19:31:46.003Z",
+    ami_launch_index = "0",
+    state = "running",
+  },
+  instance_id = "i-54251318",
+}
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] In Instance:__init(self, instance_data)
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] Printing self:
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] Printing instance_data: 
+----[Printing Self Values]
+output        :	file (0xb7ea24e0)
+prefix        :	
+maxdepth      :	-1
+table history :	table: 0x826ec30
+value         :	nil
+startin for   :
+
+----[Viewer:print:for:self:writevalue(output,value,history,prefix,maxdepth)]
+{ --[[table: 0x826ec08]] }
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] Printing inst ( __init(self, instance_data ): 
+----[Printing Self Values]
+output        :	file (0xb7ea24e0)
+prefix        :	
+maxdepth      :	-1
+table history :	table: 0x830e400
+value         :	nil
+startin for   :
+
+----[Viewer:print:for:self:writevalue(output,value,history,prefix,maxdepth)]
+{ --[[table: 0x826ec08]]
+  image = { --[[table: 0x830e2d0]]
+    __reference = { --[[table: 0x830e0b8]]
+      type_id = "IDL:ResourceManager/Image:1.0",
+      profiles = { --[[table: 0x830e170]]
+        1 { --[[table: 0x830e1b8]]
+          profile_data = "\000\r\000\000\000139.82.2.178\000\000Û\000\000\000þb/šM\000\000.È\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000TTA\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000	\000\000\000\000	\000",
+          tag = 0,
+        },
+        n = 1,
+      },
+    },
+    __deferred = { --[[table: 0x830e2f8]]
+      __reference = table: 0x830e0b8,
+    },
+    __try = { --[[table: 0x830e360]]
+      __reference = table: 0x830e0b8,
+    },
+  },
+  zone = { --[[table: 0x830e750]]
+    __reference = { --[[table: 0x830e558]]
+      type_id = "IDL:ResourceManager/AvailabilityZone:1.0",
+      profiles = { --[[table: 0x830e5f0]]
+        1 { --[[table: 0x830e638]]
+          profile_data = "\000\r\000\000\000139.82.2.178\000\000Û\000\000\000þb/šM\000\000.È\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000TTA\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000	\000\000\000\000	\000",
+          tag = 0,
+        },
+        n = 1,
+      },
+    },
+    __deferred = { --[[table: 0x830e778]]
+      __reference = table: 0x830e558,
+    },
+    __try = { --[[table: 0x830e7e0]]
+      __reference = table: 0x830e558,
+    },
+  },
+  broker = true,
+  engine = { --[[table: 0x830de80]]
+    __reference = { --[[table: 0x830dac0]]
+      type_id = "IDL:ResourceManager/Instance:1.0",
+      profiles = { --[[table: 0x830dd20]]
+        1 { --[[table: 0x830dd68]]
+          profile_data = "\000\r\000\000\000139.82.2.178\000\000Û\000\000\000þb/šM\000\000.È\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000TTA\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000	\000\000\000\000	\000",
+          tag = 0,
+        },
+        n = 1,
+      },
+    },
+    __deferred = { --[[table: 0x830dea8]]
+      __reference = table: 0x830dac0,
+    },
+    __try = { --[[table: 0x830df10]]
+      __reference = table: 0x830dac0,
+    },
+  },
+  instance_data = { --[[table: 0x826e5e0]] },
+}
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] Evaluating Functions with Demo Data
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] -----------------------------------
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] In adapt_idata_host_data
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] ------------------------
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] Printing Engine from adapt_idata_host_data()
+----[Printing Self Values]
+output        :	file (0xb7ea24e0)
+prefix        :	
+maxdepth      :	-1
+table history :	table: 0x830f400
+value         :	nil
+startin for   :
+
+----[Viewer:print:for:self:writevalue(output,value,history,prefix,maxdepth)]
+{ --[[table: 0x8131aa0]]
+  __reference = { --[[table: 0x810efd8]]
+    type_id = "IDL:ResourceManager/Instance:1.0",
+    profiles = { --[[table: 0x810f0c8]]
+      1 { --[[table: 0x810f110]]
+        profile_data = "\000\r\000\000\000139.82.2.178\000\000Û\000\000\000þb/šM\000\000.È\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000TTA\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000	\000\000\000\000	\000",
+        tag = 0,
+      },
+      n = 1,
+    },
+  },
+  __deferred = { --[[table: 0x8131d28]]
+    __reference = table: 0x810efd8,
+  },
+  __try = { --[[table: 0x8131f50]]
+    __reference = table: 0x810efd8,
+  },
+}
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] adapt_idata_host_data(instance)
+----[Printing Self Values]
+output        :	file (0xb7ea24e0)
+prefix        :	
+maxdepth      :	-1
+table history :	table: 0x830f630
+value         :	nil
+startin for   :
+
+----[Viewer:print:for:self:writevalue(output,value,history,prefix,maxdepth)]
+{ --[[table: 0x81ffe70]]
+  instance_type = "m1.small",
+  key_name = "mykey",
+  placement = "clusterpituba",
+  private_dns_name = "139.82.2.179",
+  product_codes = "unknow",
+  image_id = "emi-01FD1576",
+  ramdisk = "eri-AB77179D",
+  public_dns_name = "139.82.2.179",
+  kernel = "eki-48261651",
+  launch_time = "2011-03-17T19:31:46.003Z",
+  ami_launch_index = "0",
+  state = "running",
+}
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYDEBUG ] Printing self.instance_id: i-54251318
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] Loading Host Parameters
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYDEBUG ] The image id associated is: emi-01FD1576
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] The image_info is:
+----[Printing Self Values]
+output        :	file (0xb7ea24e0)
+prefix        :	
+maxdepth      :	-1
+table history :	table: 0x8313c68
+value         :	nil
+startin for   :
+
+----[Viewer:print:for:self:writevalue(output,value,history,prefix,maxdepth)]
+{ --[[table: 0x8313500]]
+  image_id = "emi-01FD1576",
+  image_data = { --[[table: 0x8313598]]
+    state = "available",
+    type = "machine",
+    architecture = "x86_64",
+    kernel_id = "eki-48261651",
+    location = "ubuntu-image-bucket/ubuntu.9-04.x86.img.manifest.xml",
+    ownerId = "admin",
+    type_access = "public",
+    ramdisk_id = "eri-AB77179D",
+  },
+}
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] For example, the image_info.self.architecture is: x86_64
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYDEBUG ] Type of Instance: m1.small
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] =========================?>
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] In get_typevm()
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYDEBUG ] Request typevm: m1.small
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYDEBUG ] Printing data of type: string
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYDEBUG ] typevms: table
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] Printing all typevms: 
+----[Printing Self Values]
+output        :	file (0xb7ea24e0)
+prefix        :	
+maxdepth      :	-1
+table history :	table: 0x8318478
+value         :	nil
+startin for   :
+
+----[Viewer:print:for:self:writevalue(output,value,history,prefix,maxdepth)]
+{ --[[table: 0x8315678]]
+  1 { --[[table: 0x83156a0]]
+    name = "m1.xlarge",
+    values = { --[[table: 0x8315778]]
+      1 { --[[table: 0x83157c0]]
+        name = "disk",
+        value = "20",
+      },
+      2 { --[[table: 0x8315968]]
+        name = "max",
+        value = "0001",
+      },
+      3 { --[[table: 0x8315b10]]
+        name = "ram",
+        value = "1024",
+      },
+      4 { --[[table: 0x8315d10]]
+        name = "cpu",
+        value = "2",
+      },
+      5 { --[[table: 0x8315e58]]
+        name = "free",
+        value = "0001",
+      },
+      n = 5,
+    },
+  },
+  2 { --[[table: 0x8316088]]
+    name = "m1.small",
+    values = { --[[table: 0x8316100]]
+      1 { --[[table: 0x8316128]]
+        name = "disk",
+        value = "2",
+      },
+      2 { --[[table: 0x83162b0]]
+        name = "max",
+        value = "0017",
+      },
+      3 { --[[table: 0x8316438]]
+        name = "ram",
+        value = "100",
+      },
+      4 { --[[table: 0x83165c0]]
+        name = "cpu",
+        value = "1",
+      },
+      5 { --[[table: 0x83166e8]]
+        name = "free",
+        value = "0016",
+      },
+      n = 5,
+    },
+  },
+  3 { --[[table: 0x8316918]]
+    name = "c1.medium",
+    values = { --[[table: 0x83169d0]]
+      1 { --[[table: 0x8316a18]]
+        name = "disk",
+        value = "5",
+      },
+      2 { --[[table: 0x8316ba0]]
+        name = "max",
+        value = "0017",
+      },
+      3 { --[[table: 0x8316ce8]]
+        name = "ram",
+        value = "100",
+      },
+      4 { --[[table: 0x8316e50]]
+        name = "cpu",
+        value = "1",
+      },
+      5 { --[[table: 0x8316f78]]
+        name = "free",
+        value = "0016",
+      },
+      n = 5,
+    },
+  },
+  4 { --[[table: 0x8317168]]
+    name = "c1.xlarge",
+    values = { --[[table: 0x83171e0]]
+      1 { --[[table: 0x8317228]]
+        name = "disk",
+        value = "20",
+      },
+      2 { --[[table: 0x83173b0]]
+        name = "max",
+        value = "0000",
+      },
+      3 { --[[table: 0x8317538]]
+        name = "ram",
+        value = "2048",
+      },
+      4 { --[[table: 0x8317718]]
+        name = "cpu",
+        value = "4",
+      },
+      5 { --[[table: 0x8317840]]
+        name = "free",
+        value = "0000",
+      },
+      n = 5,
+    },
+  },
+  5 { --[[table: 0x8317a30]]
+    name = "m1.large",
+    values = { --[[table: 0x8317ac8]]
+      1 { --[[table: 0x8317b10]]
+        name = "disk",
+        value = "10",
+      },
+      2 { --[[table: 0x8317cb8]]
+        name = "max",
+        value = "0003",
+      },
+      3 { --[[table: 0x8317e40]]
+        name = "ram",
+        value = "512",
+      },
+      4 { --[[table: 0x8317fc8]]
+        name = "cpu",
+        value = "2",
+      },
+      5 { --[[table: 0x83180f0]]
+        name = "free",
+        value = "0003",
+      },
+      n = 5,
+    },
+  },
+  n = 5,
+}
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] Printing typevms[typevm]: 
+----[Printing Self Values]
+output        :	file (0xb7ea24e0)
+prefix        :	
+maxdepth      :	-1
+table history :	table: 0x8318cb0
+value         :	nil
+startin for   :
+
+----[Viewer:print:for:self:writevalue(output,value,history,prefix,maxdepth)]
+{ --[[table: 0x83156a0]]
+  name = "m1.xlarge",
+  values = { --[[table: 0x8315778]]
+    1 { --[[table: 0x83157c0]]
+      name = "disk",
+      value = "20",
+    },
+    2 { --[[table: 0x8315968]]
+      name = "max",
+      value = "0001",
+    },
+    3 { --[[table: 0x8315b10]]
+      name = "ram",
+      value = "1024",
+    },
+    4 { --[[table: 0x8315d10]]
+      name = "cpu",
+      value = "2",
+    },
+    5 { --[[table: 0x8315e58]]
+      name = "free",
+      value = "0001",
+    },
+    n = 5,
+  },
+}
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] Iterating typevms
+----[Printing Self Values]
+output        :	file (0xb7ea24e0)
+prefix        :	
+maxdepth      :	-1
+table history :	table: 0x8319890
+value         :	nil
+startin for   :
+
+----[Viewer:print:for:self:writevalue(output,value,history,prefix,maxdepth)]
+{ --[[table: 0x83156a0]]
+  name = "m1.xlarge",
+  values = { --[[table: 0x8315778]]
+    1 { --[[table: 0x83157c0]]
+      name = "disk",
+      value = "20",
+    },
+    2 { --[[table: 0x8315968]]
+      name = "max",
+      value = "0001",
+    },
+    3 { --[[table: 0x8315b10]]
+      name = "ram",
+      value = "1024",
+    },
+    4 { --[[table: 0x8315d10]]
+      name = "cpu",
+      value = "2",
+    },
+    5 { --[[table: 0x8315e58]]
+      name = "free",
+      value = "0001",
+    },
+    n = 5,
+  },
+}
+----[Printing Self Values]
+output        :	file (0xb7ea24e0)
+prefix        :	
+maxdepth      :	-1
+table history :	table: 0x83198e0
+value         :	nil
+startin for   :
+
+----[Viewer:print:for:self:writevalue(output,value,history,prefix,maxdepth)]
+{ --[[table: 0x8316088]]
+  name = "m1.small",
+  values = { --[[table: 0x8316100]]
+    1 { --[[table: 0x8316128]]
+      name = "disk",
+      value = "2",
+    },
+    2 { --[[table: 0x83162b0]]
+      name = "max",
+      value = "0017",
+    },
+    3 { --[[table: 0x8316438]]
+      name = "ram",
+      value = "100",
+    },
+    4 { --[[table: 0x83165c0]]
+      name = "cpu",
+      value = "1",
+    },
+    5 { --[[table: 0x83166e8]]
+      name = "free",
+      value = "0016",
+    },
+    n = 5,
+  },
+}
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] typevm founded
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] Printing the instance_type
+----[Printing Self Values]
+output        :	file (0xb7ea24e0)
+prefix        :	
+maxdepth      :	-1
+table history :	table: 0x8319930
+value         :	nil
+startin for   :
+
+----[Viewer:print:for:self:writevalue(output,value,history,prefix,maxdepth)]
+{ --[[table: 0x8316100]]
+  1 { --[[table: 0x8316128]]
+    name = "disk",
+    value = "2",
+  },
+  2 { --[[table: 0x83162b0]]
+    name = "max",
+    value = "0017",
+  },
+  3 { --[[table: 0x8316438]]
+    name = "ram",
+    value = "100",
+  },
+  4 { --[[table: 0x83165c0]]
+    name = "cpu",
+    value = "1",
+  },
+  5 { --[[table: 0x83166e8]]
+    name = "free",
+    value = "0016",
+  },
+  n = 5,
+}
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYDEBUG ] cpu: 1
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYDEBUG ] mem: 100
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] Printing the table_data
+----[Printing Self Values]
+output        :	file (0xb7ea24e0)
+prefix        :	
+maxdepth      :	-1
+table history :	table: 0x80cfc90
+value         :	nil
+startin for   :
+
+----[Viewer:print:for:self:writevalue(output,value,history,prefix,maxdepth)]
+{ --[[table: 0x830f810]]
+  port = "1000",
+  name = "i-54251318",
+  instance_type = "m1.small",
+  languages = { --[[table: 0x830f910]]
+    1 "lua",
+    2 "java",
+  },
+  resources = { --[[table: 0x80cfc40]]
+    bandwidth = "1000",
+    os = "Linux",
+    arch = "Linux_x86_64",
+    cpu = "1",
+    mem = "100",
+  },
+  ip = "139.82.2.179",
+}
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] Getting instances
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] In get_instances()( file resourceinstance.lua )
+----[Printing Self Values]
+output        :	file (0xb7ea24e0)
+prefix        :	
+maxdepth      :	-1
+table history :	table: 0x831c2b0
+value         :	nil
+startin for   :
+
+----[Viewer:print:for:self:writevalue(output,value,history,prefix,maxdepth)]
+{ --[[table: 0x831b938]]
+  1 { --[[table: 0x831b960]]
+    instance_data = { --[[table: 0x831ba60]]
+      instance_type = "m1.small",
+      key_name = "mykey",
+      placement = "clusterpituba",
+      private_dns_name = "139.82.2.156",
+      product_codes = "None",
+      image_id = "emi-01FD1576",
+      ramdisk = "eri-AB77179D",
+      ami_launch_index = "0",
+      kernel = "eki-48261651",
+      launch_time = "2011-04-04T18:01:14.719Z",
+      state = "running",
+      public_dns_name = "139.82.2.156",
+    },
+    instance_id = "i-4B25083E",
+  },
+  n = 1,
+}
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] Getting Availability Zones
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] In get_zones()
+----[Printing Self Values]
+output        :	file (0xb7ea24e0)
+prefix        :	
+maxdepth      :	-1
+table history :	table: 0x831d390
+value         :	nil
+startin for   :
+
+----[Viewer:print:for:self:writevalue(output,value,history,prefix,maxdepth)]
+{ --[[table: 0x831d1d0]]
+  1 { --[[table: 0x831d1f8]]
+    name = "clusterpituba",
+    state = "139.82.2.187",
+  },
+  n = 1,
+}
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] Getting all typevm
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] In get_availability_zones
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYDEBUG ] Types of vms: 
+typevm_detail: 	table: 0x831b188
+----[Printing Self Values]
+output        :	file (0xb7ea24e0)
+prefix        :	
+maxdepth      :	-1
+table history :	table: 0x8320cf8
+value         :	nil
+startin for   :
+
+----[Viewer:print:for:self:writevalue(output,value,history,prefix,maxdepth)]
+{ --[[table: 0x831b188]]
+  1 { --[[table: 0x831e3d8]]
+    name = "m1.xlarge",
+    values = { --[[table: 0x831e490]]
+      1 { --[[table: 0x831e4d8]]
+        name = "disk",
+        value = "20",
+      },
+      2 { --[[table: 0x831e620]]
+        name = "max",
+        value = "0001",
+      },
+      3 { --[[table: 0x831e768]]
+        name = "ram",
+        value = "1024",
+      },
+      4 { --[[table: 0x831e908]]
+        name = "cpu",
+        value = "2",
+      },
+      5 { --[[table: 0x831ea30]]
+        name = "free",
+        value = "0001",
+      },
+      n = 5,
+    },
+  },
+  2 { --[[table: 0x831ec20]]
+    name = "m1.small",
+    values = { --[[table: 0x831ec98]]
+      1 { --[[table: 0x831ecc0]]
+        name = "disk",
+        value = "2",
+      },
+      2 { --[[table: 0x831ee48]]
+        name = "max",
+        value = "0017",
+      },
+      3 { --[[table: 0x831ef90]]
+        name = "ram",
+        value = "100",
+      },
+      4 { --[[table: 0x831f0f8]]
+        name = "cpu",
+        value = "1",
+      },
+      5 { --[[table: 0x831f220]]
+        name = "free",
+        value = "0016",
+      },
+      n = 5,
+    },
+  },
+  3 { --[[table: 0x831f410]]
+    name = "c1.medium",
+    values = { --[[table: 0x831f488]]
+      1 { --[[table: 0x831f4d0]]
+        name = "disk",
+        value = "5",
+      },
+      2 { --[[table: 0x831f658]]
+        name = "max",
+        value = "0017",
+      },
+      3 { --[[table: 0x831f7a0]]
+        name = "ram",
+        value = "100",
+      },
+      4 { --[[table: 0x831f908]]
+        name = "cpu",
+        value = "1",
+      },
+      5 { --[[table: 0x831fa30]]
+        name = "free",
+        value = "0016",
+      },
+      n = 5,
+    },
+  },
+  4 { --[[table: 0x831fc20]]
+    name = "c1.xlarge",
+    values = { --[[table: 0x831fc98]]
+      1 { --[[table: 0x831fcc0]]
+        name = "disk",
+        value = "20",
+      },
+      2 { --[[table: 0x831fe28]]
+        name = "max",
+        value = "0000",
+      },
+      3 { --[[table: 0x831ff70]]
+        name = "ram",
+        value = "2048",
+      },
+      4 { --[[table: 0x8320110]]
+        name = "cpu",
+        value = "4",
+      },
+      5 { --[[table: 0x8320238]]
+        name = "free",
+        value = "0000",
+      },
+      n = 5,
+    },
+  },
+  5 { --[[table: 0x8320428]]
+    name = "m1.large",
+    values = { --[[table: 0x83204a0]]
+      1 { --[[table: 0x83204c8]]
+        name = "disk",
+        value = "10",
+      },
+      2 { --[[table: 0x8320650]]
+        name = "max",
+        value = "0003",
+      },
+      3 { --[[table: 0x8320798]]
+        name = "ram",
+        value = "512",
+      },
+      4 { --[[table: 0x8320900]]
+        name = "cpu",
+        value = "2",
+      },
+      5 { --[[table: 0x8320a28]]
+        name = "free",
+        value = "0003",
+      },
+      n = 5,
+    },
+  },
+  n = 5,
+}
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] Getting a m1.small type
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] In get_typevm()
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYDEBUG ] Request typevm: m1.small
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYDEBUG ] Printing data of type: string
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYDEBUG ] typevms: table
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] Printing all typevms: 
+----[Printing Self Values]
+output        :	file (0xb7ea24e0)
+prefix        :	
+maxdepth      :	-1
+table history :	table: 0x83250d8
+value         :	nil
+startin for   :
+
+----[Viewer:print:for:self:writevalue(output,value,history,prefix,maxdepth)]
+{ --[[table: 0x8322878]]
+  1 { --[[table: 0x83228a0]]
+    name = "m1.xlarge",
+    values = { --[[table: 0x8322958]]
+      1 { --[[table: 0x83229a0]]
+        name = "disk",
+        value = "20",
+      },
+      2 { --[[table: 0x8322ae8]]
+        name = "max",
+        value = "0001",
+      },
+      3 { --[[table: 0x8322c30]]
+        name = "ram",
+        value = "1024",
+      },
+      4 { --[[table: 0x8322d98]]
+        name = "cpu",
+        value = "2",
+      },
+      5 { --[[table: 0x8322ec0]]
+        name = "free",
+        value = "0001",
+      },
+      n = 5,
+    },
+  },
+  2 { --[[table: 0x83230b0]]
+    name = "m1.small",
+    values = { --[[table: 0x8323128]]
+      1 { --[[table: 0x8323150]]
+        name = "disk",
+        value = "2",
+      },
+      2 { --[[table: 0x83232d8]]
+        name = "max",
+        value = "0017",
+      },
+      3 { --[[table: 0x8323420]]
+        name = "ram",
+        value = "100",
+      },
+      4 { --[[table: 0x8323588]]
+        name = "cpu",
+        value = "1",
+      },
+      5 { --[[table: 0x83236b0]]
+        name = "free",
+        value = "0016",
+      },
+      n = 5,
+    },
+  },
+  3 { --[[table: 0x83238a0]]
+    name = "c1.medium",
+    values = { --[[table: 0x8323918]]
+      1 { --[[table: 0x8323960]]
+        name = "disk",
+        value = "5",
+      },
+      2 { --[[table: 0x8323ae8]]
+        name = "max",
+        value = "0017",
+      },
+      3 { --[[table: 0x8323c30]]
+        name = "ram",
+        value = "100",
+      },
+      4 { --[[table: 0x8323d98]]
+        name = "cpu",
+        value = "1",
+      },
+      5 { --[[table: 0x8323ec0]]
+        name = "free",
+        value = "0016",
+      },
+      n = 5,
+    },
+  },
+  4 { --[[table: 0x83240b0]]
+    name = "c1.xlarge",
+    values = { --[[table: 0x8324128]]
+      1 { --[[table: 0x8324150]]
+        name = "disk",
+        value = "20",
+      },
+      2 { --[[table: 0x83242b8]]
+        name = "max",
+        value = "0000",
+      },
+      3 { --[[table: 0x8324400]]
+        name = "ram",
+        value = "2048",
+      },
+      4 { --[[table: 0x8324568]]
+        name = "cpu",
+        value = "4",
+      },
+      5 { --[[table: 0x8324690]]
+        name = "free",
+        value = "0000",
+      },
+      n = 5,
+    },
+  },
+  5 { --[[table: 0x8324880]]
+    name = "m1.large",
+    values = { --[[table: 0x83248f8]]
+      1 { --[[table: 0x8324920]]
+        name = "disk",
+        value = "10",
+      },
+      2 { --[[table: 0x8324aa8]]
+        name = "max",
+        value = "0003",
+      },
+      3 { --[[table: 0x8324bf0]]
+        name = "ram",
+        value = "512",
+      },
+      4 { --[[table: 0x8324d58]]
+        name = "cpu",
+        value = "2",
+      },
+      5 { --[[table: 0x8324e80]]
+        name = "free",
+        value = "0003",
+      },
+      n = 5,
+    },
+  },
+  n = 5,
+}
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] Printing typevms[typevm]: 
+----[Printing Self Values]
+output        :	file (0xb7ea24e0)
+prefix        :	
+maxdepth      :	-1
+table history :	table: 0x83258b0
+value         :	nil
+startin for   :
+
+----[Viewer:print:for:self:writevalue(output,value,history,prefix,maxdepth)]
+{ --[[table: 0x83228a0]]
+  name = "m1.xlarge",
+  values = { --[[table: 0x8322958]]
+    1 { --[[table: 0x83229a0]]
+      name = "disk",
+      value = "20",
+    },
+    2 { --[[table: 0x8322ae8]]
+      name = "max",
+      value = "0001",
+    },
+    3 { --[[table: 0x8322c30]]
+      name = "ram",
+      value = "1024",
+    },
+    4 { --[[table: 0x8322d98]]
+      name = "cpu",
+      value = "2",
+    },
+    5 { --[[table: 0x8322ec0]]
+      name = "free",
+      value = "0001",
+    },
+    n = 5,
+  },
+}
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] Iterating typevms
+----[Printing Self Values]
+output        :	file (0xb7ea24e0)
+prefix        :	
+maxdepth      :	-1
+table history :	table: 0x8325980
+value         :	nil
+startin for   :
+
+----[Viewer:print:for:self:writevalue(output,value,history,prefix,maxdepth)]
+{ --[[table: 0x83228a0]]
+  name = "m1.xlarge",
+  values = { --[[table: 0x8322958]]
+    1 { --[[table: 0x83229a0]]
+      name = "disk",
+      value = "20",
+    },
+    2 { --[[table: 0x8322ae8]]
+      name = "max",
+      value = "0001",
+    },
+    3 { --[[table: 0x8322c30]]
+      name = "ram",
+      value = "1024",
+    },
+    4 { --[[table: 0x8322d98]]
+      name = "cpu",
+      value = "2",
+    },
+    5 { --[[table: 0x8322ec0]]
+      name = "free",
+      value = "0001",
+    },
+    n = 5,
+  },
+}
+----[Printing Self Values]
+output        :	file (0xb7ea24e0)
+prefix        :	
+maxdepth      :	-1
+table history :	table: 0x83259d0
+value         :	nil
+startin for   :
+
+----[Viewer:print:for:self:writevalue(output,value,history,prefix,maxdepth)]
+{ --[[table: 0x83230b0]]
+  name = "m1.small",
+  values = { --[[table: 0x8323128]]
+    1 { --[[table: 0x8323150]]
+      name = "disk",
+      value = "2",
+    },
+    2 { --[[table: 0x83232d8]]
+      name = "max",
+      value = "0017",
+    },
+    3 { --[[table: 0x8323420]]
+      name = "ram",
+      value = "100",
+    },
+    4 { --[[table: 0x8323588]]
+      name = "cpu",
+      value = "1",
+    },
+    5 { --[[table: 0x83236b0]]
+      name = "free",
+      value = "0016",
+    },
+    n = 5,
+  },
+}
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] typevm founded
+type m1.small: 	table: 0x8323128
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] Printing a table typevm details
+----[Printing Self Values]
+output        :	file (0xb7ea24e0)
+prefix        :	
+maxdepth      :	-1
+table history :	table: 0x83266d0
+value         :	nil
+startin for   :
+
+----[Viewer:print:for:self:writevalue(output,value,history,prefix,maxdepth)]
+{ --[[table: 0x8323128]]
+  1 { --[[table: 0x8323150]]
+    name = "disk",
+    value = "2",
+  },
+  2 { --[[table: 0x83232d8]]
+    name = "max",
+    value = "0017",
+  },
+  3 { --[[table: 0x8323420]]
+    name = "ram",
+    value = "100",
+  },
+  4 { --[[table: 0x8323588]]
+    name = "cpu",
+    value = "1",
+  },
+  5 { --[[table: 0x83236b0]]
+    name = "free",
+    value = "0016",
+  },
+  n = 5,
+}
+2
+0017
+100
+1
+0016
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] LOADING DATA FROM EUCALYPTUS
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] ----------------------------
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] In adapt_idata_host_data
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] ------------------------
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] Printing Engine from adapt_idata_host_data()
+----[Printing Self Values]
+output        :	file (0xb7ea24e0)
+prefix        :	
+maxdepth      :	-1
+table history :	table: 0x8326900
+value         :	nil
+startin for   :
+
+----[Viewer:print:for:self:writevalue(output,value,history,prefix,maxdepth)]
+nil
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] adapt_idata_host_data(instance)
+----[Printing Self Values]
+output        :	file (0xb7ea24e0)
+prefix        :	
+maxdepth      :	-1
+table history :	table: 0x8326950
+value         :	nil
+startin for   :
+
+----[Viewer:print:for:self:writevalue(output,value,history,prefix,maxdepth)]
+{ --[[table: 0x831ba60]]
+  instance_type = "m1.small",
+  key_name = "mykey",
+  placement = "clusterpituba",
+  private_dns_name = "139.82.2.156",
+  product_codes = "None",
+  image_id = "emi-01FD1576",
+  ramdisk = "eri-AB77179D",
+  ami_launch_index = "0",
+  kernel = "eki-48261651",
+  launch_time = "2011-04-04T18:01:14.719Z",
+  state = "running",
+  public_dns_name = "139.82.2.156",
+}
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYDEBUG ] Printing self.instance_id: i-4B25083E
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] Loading Host Parameters
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYDEBUG ] The image id associated is: emi-01FD1576
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] The image_info is:
+----[Printing Self Values]
+output        :	file (0xb7ea24e0)
+prefix        :	
+maxdepth      :	-1
+table history :	table: 0x8327af0
+value         :	nil
+startin for   :
+
+----[Viewer:print:for:self:writevalue(output,value,history,prefix,maxdepth)]
+{ --[[table: 0x83275a0]]
+  image_id = "emi-01FD1576",
+  image_data = { --[[table: 0x8327638]]
+    state = "available",
+    type = "machine",
+    architecture = "x86_64",
+    kernel_id = "eki-48261651",
+    location = "ubuntu-image-bucket/ubuntu.9-04.x86.img.manifest.xml",
+    ownerId = "admin",
+    type_access = "public",
+    ramdisk_id = "eri-AB77179D",
+  },
+}
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] For example, the image_info.self.architecture is: x86_64
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYDEBUG ] Type of Instance: m1.small
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] =========================?>
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] In get_typevm()
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYDEBUG ] Request typevm: m1.small
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYDEBUG ] Printing data of type: string
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYDEBUG ] typevms: table
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] Printing all typevms: 
+----[Printing Self Values]
+output        :	file (0xb7ea24e0)
+prefix        :	
+maxdepth      :	-1
+table history :	table: 0x832ae40
+value         :	nil
+startin for   :
+
+----[Viewer:print:for:self:writevalue(output,value,history,prefix,maxdepth)]
+{ --[[table: 0x83285e0]]
+  1 { --[[table: 0x8328608]]
+    name = "m1.xlarge",
+    values = { --[[table: 0x83286c0]]
+      1 { --[[table: 0x8328708]]
+        name = "disk",
+        value = "20",
+      },
+      2 { --[[table: 0x8328850]]
+        name = "max",
+        value = "0001",
+      },
+      3 { --[[table: 0x8328998]]
+        name = "ram",
+        value = "1024",
+      },
+      4 { --[[table: 0x8328b00]]
+        name = "cpu",
+        value = "2",
+      },
+      5 { --[[table: 0x8328c28]]
+        name = "free",
+        value = "0001",
+      },
+      n = 5,
+    },
+  },
+  2 { --[[table: 0x8328e18]]
+    name = "m1.small",
+    values = { --[[table: 0x8328e90]]
+      1 { --[[table: 0x8328eb8]]
+        name = "disk",
+        value = "2",
+      },
+      2 { --[[table: 0x8329040]]
+        name = "max",
+        value = "0017",
+      },
+      3 { --[[table: 0x8329188]]
+        name = "ram",
+        value = "100",
+      },
+      4 { --[[table: 0x83292f0]]
+        name = "cpu",
+        value = "1",
+      },
+      5 { --[[table: 0x8329418]]
+        name = "free",
+        value = "0016",
+      },
+      n = 5,
+    },
+  },
+  3 { --[[table: 0x8329608]]
+    name = "c1.medium",
+    values = { --[[table: 0x8329680]]
+      1 { --[[table: 0x83296c8]]
+        name = "disk",
+        value = "5",
+      },
+      2 { --[[table: 0x8329850]]
+        name = "max",
+        value = "0017",
+      },
+      3 { --[[table: 0x8329998]]
+        name = "ram",
+        value = "100",
+      },
+      4 { --[[table: 0x8329b00]]
+        name = "cpu",
+        value = "1",
+      },
+      5 { --[[table: 0x8329c28]]
+        name = "free",
+        value = "0016",
+      },
+      n = 5,
+    },
+  },
+  4 { --[[table: 0x8329e18]]
+    name = "c1.xlarge",
+    values = { --[[table: 0x8329e90]]
+      1 { --[[table: 0x8329eb8]]
+        name = "disk",
+        value = "20",
+      },
+      2 { --[[table: 0x832a020]]
+        name = "max",
+        value = "0000",
+      },
+      3 { --[[table: 0x832a168]]
+        name = "ram",
+        value = "2048",
+      },
+      4 { --[[table: 0x832a2d0]]
+        name = "cpu",
+        value = "4",
+      },
+      5 { --[[table: 0x832a3f8]]
+        name = "free",
+        value = "0000",
+      },
+      n = 5,
+    },
+  },
+  5 { --[[table: 0x832a5e8]]
+    name = "m1.large",
+    values = { --[[table: 0x832a660]]
+      1 { --[[table: 0x832a688]]
+        name = "disk",
+        value = "10",
+      },
+      2 { --[[table: 0x832a810]]
+        name = "max",
+        value = "0003",
+      },
+      3 { --[[table: 0x832a958]]
+        name = "ram",
+        value = "512",
+      },
+      4 { --[[table: 0x832aac0]]
+        name = "cpu",
+        value = "2",
+      },
+      5 { --[[table: 0x832abe8]]
+        name = "free",
+        value = "0003",
+      },
+      n = 5,
+    },
+  },
+  n = 5,
+}
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] Printing typevms[typevm]: 
+----[Printing Self Values]
+output        :	file (0xb7ea24e0)
+prefix        :	
+maxdepth      :	-1
+table history :	table: 0x832b618
+value         :	nil
+startin for   :
+
+----[Viewer:print:for:self:writevalue(output,value,history,prefix,maxdepth)]
+{ --[[table: 0x8328608]]
+  name = "m1.xlarge",
+  values = { --[[table: 0x83286c0]]
+    1 { --[[table: 0x8328708]]
+      name = "disk",
+      value = "20",
+    },
+    2 { --[[table: 0x8328850]]
+      name = "max",
+      value = "0001",
+    },
+    3 { --[[table: 0x8328998]]
+      name = "ram",
+      value = "1024",
+    },
+    4 { --[[table: 0x8328b00]]
+      name = "cpu",
+      value = "2",
+    },
+    5 { --[[table: 0x8328c28]]
+      name = "free",
+      value = "0001",
+    },
+    n = 5,
+  },
+}
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] Iterating typevms
+----[Printing Self Values]
+output        :	file (0xb7ea24e0)
+prefix        :	
+maxdepth      :	-1
+table history :	table: 0x832b6e8
+value         :	nil
+startin for   :
+
+----[Viewer:print:for:self:writevalue(output,value,history,prefix,maxdepth)]
+{ --[[table: 0x8328608]]
+  name = "m1.xlarge",
+  values = { --[[table: 0x83286c0]]
+    1 { --[[table: 0x8328708]]
+      name = "disk",
+      value = "20",
+    },
+    2 { --[[table: 0x8328850]]
+      name = "max",
+      value = "0001",
+    },
+    3 { --[[table: 0x8328998]]
+      name = "ram",
+      value = "1024",
+    },
+    4 { --[[table: 0x8328b00]]
+      name = "cpu",
+      value = "2",
+    },
+    5 { --[[table: 0x8328c28]]
+      name = "free",
+      value = "0001",
+    },
+    n = 5,
+  },
+}
+----[Printing Self Values]
+output        :	file (0xb7ea24e0)
+prefix        :	
+maxdepth      :	-1
+table history :	table: 0x832b738
+value         :	nil
+startin for   :
+
+----[Viewer:print:for:self:writevalue(output,value,history,prefix,maxdepth)]
+{ --[[table: 0x8328e18]]
+  name = "m1.small",
+  values = { --[[table: 0x8328e90]]
+    1 { --[[table: 0x8328eb8]]
+      name = "disk",
+      value = "2",
+    },
+    2 { --[[table: 0x8329040]]
+      name = "max",
+      value = "0017",
+    },
+    3 { --[[table: 0x8329188]]
+      name = "ram",
+      value = "100",
+    },
+    4 { --[[table: 0x83292f0]]
+      name = "cpu",
+      value = "1",
+    },
+    5 { --[[table: 0x8329418]]
+      name = "free",
+      value = "0016",
+    },
+    n = 5,
+  },
+}
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] typevm founded
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] Printing the instance_type
+----[Printing Self Values]
+output        :	file (0xb7ea24e0)
+prefix        :	
+maxdepth      :	-1
+table history :	table: 0x832c2f8
+value         :	nil
+startin for   :
+
+----[Viewer:print:for:self:writevalue(output,value,history,prefix,maxdepth)]
+{ --[[table: 0x8328e90]]
+  1 { --[[table: 0x8328eb8]]
+    name = "disk",
+    value = "2",
+  },
+  2 { --[[table: 0x8329040]]
+    name = "max",
+    value = "0017",
+  },
+  3 { --[[table: 0x8329188]]
+    name = "ram",
+    value = "100",
+  },
+  4 { --[[table: 0x83292f0]]
+    name = "cpu",
+    value = "1",
+  },
+  5 { --[[table: 0x8329418]]
+    name = "free",
+    value = "0016",
+  },
+  n = 5,
+}
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYDEBUG ] cpu: 1
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYDEBUG ] mem: 100
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] Printing Instace_info from: i-4B25083E
+----[Printing Self Values]
+output        :	file (0xb7ea24e0)
+prefix        :	
+maxdepth      :	-1
+table history :	table: 0x832c6a0
+value         :	nil
+startin for   :
+
+----[Viewer:print:for:self:writevalue(output,value,history,prefix,maxdepth)]
+{ --[[table: 0x8326a48]]
+  port = "1000",
+  name = "i-4B25083E",
+  instance_type = "m1.small",
+  languages = { --[[table: 0x8326b48]]
+    1 "lua",
+    2 "java",
+  },
+  resources = { --[[table: 0x832c348]]
+    bandwidth = "1000",
+    os = "Linux",
+    arch = "Linux_x86_64",
+    cpu = "1",
+    mem = "100",
+  },
+  ip = "139.82.2.156",
+}
+[Mon Apr  4 19:04:38 2011 ] [DEPLOYINFO  ] Total number of instances are: 1
